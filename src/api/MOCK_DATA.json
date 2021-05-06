@@ -1,0 +1,66 @@
+[
+  {
+    "name": "Americanas",
+    "cnpj": "34889478000172",
+    "demanda": 1000000,
+    "faturamentoAnual": "De R$ 10 a R$ 50 milhões",
+    "sobre": "Grande Company",
+    "logo": "../../static/images/cards/americanas.png"
+  },
+  {
+    "name": "Mercado Livre",
+    "cnpj": "34889478000172",
+    "demanda": 8000000,
+    "faturamentoAnual": "De R$ 200 a R$ 500 milhões",
+    "sobre": "Grande Company",
+    "logo": "../../static/images/cards/mercado-livre.jpg"
+  },
+  {
+    "name": "Casas Bahia",
+    "cnpj": "34889478000172",
+    "demanda": 9000000,
+    "faturamentoAnual": "Acima de  R$ 500 milhões",
+    "sobre": "Grande Company",
+    "logo": "../../static/images/cards/casa-bahia.jpg"
+  },
+  {
+    "name": "XP Investimentos",
+    "cnpj": "34889478000172",
+    "demanda": 100000000,
+    "faturamentoAnual": "Acima de  R$ 500 milhões",
+    "sobre": "Grande Company",
+    "logo": "../../static/images/cards/xp.png"
+  },
+  {
+    "name": "Americanas",
+    "cnpj": "34889478000172",
+    "demanda": 1000000,
+    "faturamentoAnual": "De R$ 10 a R$ 50 milhões",
+    "sobre": "Grande Company",
+    "logo": "../../static/images/cards/americanas.png"
+  },
+  {
+    "name": "Mercado Livre",
+    "cnpj": "34889478000172",
+    "demanda": 8000000,
+    "faturamentoAnual": "De R$ 200 a R$ 500 milhões",
+    "sobre": "Grande Company",
+    "logo": "../../static/images/cards/mercado-livre.jpg"
+  },
+  {
+    "name": "Casas Bahia",
+    "cnpj": "34889478000172",
+    "demanda": 9000000,
+    "faturamentoAnual": "Acima de  R$ 500 milhões",
+    "sobre": "Grande Company",
+    "logo": "../../static/images/cards/casa-bahia.jpg"
+  },
+  {
+    "name": "XP Investimentos",
+    "cnpj": "34889478000172",
+    "demanda": 100000000,
+    "faturamentoAnual": "Acima de  R$ 500 milhões",
+    "sobre": "Grande Company",
+    "logo": "../../static/images/cards/xp.png"
+  }
+]
