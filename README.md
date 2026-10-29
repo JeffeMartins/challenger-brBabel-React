@@ -1,46 +1,32 @@
-# Getting Started with Create React App
+# Catálogo demonstrativo de empresas
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Cliente React/TypeScript de um desafio BrBabel. Usa o dataset fictício versionado em `src/api/MOCK_DATA.json` e não exige um backend para a demonstração.
 
-## Available Scripts
+[![CI](https://github.com/JeffeMartins/challenger-brBabel-React/actions/workflows/ci.yml/badge.svg)](https://github.com/JeffeMartins/challenger-brBabel-React/actions/workflows/ci.yml)
 
-In the project directory, you can run:
+## Melhorias de engenharia
 
-### `yarn start`
+- React atual e Vite substituem Create React App e o conjunto antigo de Material UI.
+- Busca por nome e paginação funcionais, com limites calculados a partir dos dados.
+- HTML semântico, labels de formulário, foco visível e grid responsivo.
+- Imagens originais preservadas; componentes demonstrativos sem ação foram retirados.
+- TypeScript no build e teste de filtro/paginação, incluindo página inválida após uma busca.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Executar localmente
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Pré-requisitos: Node.js 24 LTS e npm; Docker Compose v2 para os serviços que usam banco.
 
-### `yarn test`
+```sh
+npm ci
+npm run dev
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Abra `http://localhost:5173`. `npm run build` gera `dist/`; `npm run preview` abre o build local; `npm test` executa as regras de busca/paginação.
 
-### `yarn build`
+O catálogo é uma demonstração local: dados não são persistidos e não há cadastro de empresas nem integração automática com a API BrBabel. Essa separação permite avaliar a interface sem credenciais/banco. O nome histórico do repositório foi preservado.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Qualidade e limites da evidência
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+As mudanças preservam a proposta do exercício e corrigem problemas observados no código. A CI usa Node 24 e `npm ci`, executa o build quando disponível e os testes existentes. O lockfile é versionado; dependências e pastas de build não são. Dependabot acompanha atualizações semanais. Não há promessa de cobertura total, auditoria completa de segurança ou capacidade de produção.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Não publique `.env`, cookies, tokens ou dados reais de clientes. Antes de expor a aplicação à internet, revise autenticação/autorização, TLS, limites de chamadas, logs e backups conforme o domínio. Os exemplos são para execução local. Use `docker compose down` para parar os containers; volumes persistem e `down -v` apaga seus dados.
